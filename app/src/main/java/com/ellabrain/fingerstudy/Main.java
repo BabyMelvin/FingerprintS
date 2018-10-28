@@ -125,6 +125,8 @@ public class Main extends AppCompatActivity {
                 mCancelBtn.setEnabled(false);
                 mStartBtn.setEnabled(true);
 
+                //set text status
+                mResultInfo.setText(getString(R.string.fingerprint_description));
                 //cancel fingerprint auth here
                 mCancellationSignal.cancel();
                 mCancellationSignal=null;
